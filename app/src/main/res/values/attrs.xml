@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ColorTrackTextView">
+
+        <attr name="originColor" format="color"/>
+        <attr name="changeColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="bordWidth" format="dimension"/>
+        <attr name="outCircleColor" format="color"/>
+        <attr name="innerCircleColor" format="color"/>
+        <attr name="circleTextColor" format="color"/>
+        <attr name="circleTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

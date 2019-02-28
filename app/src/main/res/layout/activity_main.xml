@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.custom.day3.MainActivity">
+
+    <TextView
+        android:id="@+id/sensor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <com.custom.day3.ColorTrackTextView
+        android:id="@+id/color_tv"
+        android:text="hello world!"
+        android:textSize="17sp"
+        app:changeColor="@color/colorPrimary"
+        app:originColor="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.custom.day3.CircleView
+        android:visibility="gone"
+        android:id="@+id/circle_view"
+        app:bordWidth="10dp"
+        app:outCircleColor="@color/colorPrimary"
+        app:innerCircleColor="@color/colorAccent"
+        app:circleTextColor="@color/colorAccent"
+        app:circleTextSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:onClick="leftToRight"
+        android:layout_alignParentBottom="true"
+        android:text="左到右"
+        android:id="@+id/left_to_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="rightToLeft"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="右到左"
+        android:id="@+id/right_to_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
